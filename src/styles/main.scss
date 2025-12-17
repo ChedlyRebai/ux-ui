@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "components/Header";
+@import "components/Footer";
+@import "components/SimulationExpensesPage";
+@import "components/SimulationResultsPage";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&family=Playfair+Display:wght@400;700&family=Montserrat:wght@600&family=Lato:wght@700&display=swap');
