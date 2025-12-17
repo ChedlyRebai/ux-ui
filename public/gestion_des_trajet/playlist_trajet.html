@@ -50,44 +50,184 @@
         </div>
       </div>
     </nav>
-         
-    <footer class="bg-primary mb-0 bottom-full text-white h-[275px] w-screen">
-        <div class="container ml-36 h-3/4 flex justify-between pt-10 bg-[url('/public/assets/images/logo.png')] ">
-            <div class=" w-1/4">
-                <h1 class="w-[350px] h-[96px] font-bold text-[36px]">Rides that bring you closer</h1>
+
+    <div class="w-[1196px] mx-auto">
+      <div class="flex-1 py-8 mx-auto w-full">
+        <!-- Title -->
+        <h1 class="text-2xl font-bold text-gray-900 mb-8">Playlist</h1>
+
+        <!-- Suggested or Featured Playlist (Summer Nights) -->
+        <div
+          class="bg-gray-50 rounded-2xl px-6 py-4 flex items-center justify-between mb-10 shadow-sm"
+        >
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 bg-gray-200 rounded-lg mr-4 flex items-center justify-center"
+            >
+              <svg
+                class="w-6 h-6 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10a3 3 0 11-6 0 3 3 0 016 0z"
+                ></path>
+              </svg>
             </div>
-
-            <div class="font-bold flex justify-between items-start w-2/4">
-                <div>
-                    <p class="text-gray-600">Explore</p>
-                    <ul>
-                        <li>Simulation</li>
-                        <li>Payment</li>
-                        <li>Create a Ride</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p class="text-gray-600">Support</p>
-                    <ul>
-                        <li>Contact Us</li>
-                        <li>FAQs</li>
-                        
-                    </ul>
-                </div>
-
-
-                <div>
-                    <p class="text-gray-600">Find Us Now</p>
-                    <ul>
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                        <li>Facebook</li>
-                    </ul>
-                </div>
+            <div>
+              <h2 class="text-lg font-semibold text-gray-900">Summer Nights</h2>
             </div>
+          </div>
+          <button
+            class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-gray-500"
+          >
+            <svg
+              class="w-5 h-5 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              ></path>
+            </svg>
+          </button>
         </div>
-        
+
+        <!-- Grid of Chill Vibes Playlists -->
+        <div class="grid grid-cols-2 gap-6">
+          <!-- Repeated card (you can duplicate as needed) -->
+          <div
+            class="bg-gray-100 h-[184px] items-center rounded-2xl p-4 flex flex-row shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+          >
+            <div
+              class="w-[128px] h-[128px] aspect-square bg-gray-900 rounded-xl mb-4"
+            ></div>
+            <div class="flex-1 ml-4 flex flex-col justify-between">
+              <div>
+                <h3 class="text-[32px] font-medium text-gray-900 ">Chill Vibes</h3>
+                <p class=" text-[20px] text-sm text-gray-600 mt-1">24 songs</p>
+              </div>
+            </div>
+            <div class=" ">
+              <button
+                class="w-[50px] h-[50px] rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-gray-500"
+              >
+                <svg
+                  class="w-5 h-5 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4v16m8-8H4"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Duplicate the above div for the other 7 cards -->
+          <div
+            class="bg-gray-100 rounded-2xl p-4 flex flex-col shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+          >
+            <div class="w-full aspect-square bg-gray-300 rounded-xl mb-4"></div>
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-base font-medium text-gray-900">Chill Vibes</h3>
+                <p class="text-sm text-gray-600 mt-1">24 songs</p>
+              </div>
+              <div class="mt-4 self-end">
+                <button
+                  class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-gray-500"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-700"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 4v16m8-8H4"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat 6 more times for the full 8 cards shown in the screenshot -->
+          <!-- ... -->
+        </div>
+      </div>
+
+      <!-- Bottom Buttons -->
+      <div
+        class="sticky bottom-0 bg-white   px-6 py-4 flex justify-end gap-4"
+      >
+        <button
+          class="px-8 py-3 text-gray-700 font-medium rounded-md border border-gray-300 hover:bg-gray-100"
+        >
+          Cancel
+        </button>
+        <button
+          class="px-8 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-800"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+    <footer class="bg-primary mb-0 bottom-full text-white h-[275px] w-screen">
+      <div
+        class="container ml-36 h-3/4 flex justify-between pt-10 bg-[url('/public/assets/images/logo.png')]"
+      >
+        <div class="w-1/4">
+          <h1 class="w-[350px] h-[96px] font-bold text-[36px]">
+            Rides that bring you closer
+          </h1>
+        </div>
+
+        <div class="font-bold flex justify-between items-start w-2/4">
+          <div>
+            <p class="text-gray-600">Explore</p>
+            <ul>
+              <li>Simulation</li>
+              <li>Payment</li>
+              <li>Create a Ride</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-gray-600">Support</p>
+            <ul>
+              <li>Contact Us</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-gray-600">Find Us Now</p>
+            <ul>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
