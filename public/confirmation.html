@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoutEsprit - Payment Confirmation</title>
+  <link rel="stylesheet" href="h.css">
+</head>
+<body><div class="confirmation-page">
+  <div class="confirmation-container">
+    <div class="confirmation-content">
+      <p class="confirmation-thanks">Thank you ..</p>
+      <h1 class="confirmation-title">Your payment has been successfully set up ...</h1>
+      
+      <div class="confirmation-reference">
+        <p class="reference-label">Your reference number is:</p>
+        <p class="reference-number" id="reference-number">GC615027</p>
+      </div>
+
+      <div class="confirmation-messages">
+        <div class="message-item">
+          <span class="check-icon">✓</span>
+          <p>We will notify you before the first payment of <strong>60.20 TND</strong> is made</p>
+        </div>
+        <div class="message-item">
+          <span class="check-icon">✓</span>
+          <p>Please check your inbox, as a confirmation email is on its way to</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Afficher le numéro de référence du paiement
+  document.addEventListener('DOMContentLoaded', function() {
+    const referenceElement = document.getElementById('reference-number');
+    
+    // Récupérer le numéro de référence depuis sessionStorage
+    const paymentReference = sessionStorage.getItem('paymentReference');
+    if (paymentReference && referenceElement) {
+      referenceElement.textContent = paymentReference;
+    }
+  });
+</script>
+</body>
+</html>
