@@ -32,6 +32,7 @@
           </div>
         </div>
       </div>
+
       <div class="bg-[#f2f2f2] flex flex-col place-items-center pt-12 gap-2">
         <div class="text-5xl poppins-semibold text-[#1F3A6B]">
           Trip Simulation
@@ -42,20 +43,20 @@
         <div class="flex items-center w-full max-w-4xl mx-auto">
           <div class="flex items-center">
             <div
-              class="flex items-center justify-center rounded-full size-8 bg-[#1F3A6B] text-white poppins-semibold"
+              class="flex items-center justify-center rounded-full size-8 bg-gray-400 text-white poppins-semibold"
             >
               1
             </div>
-            <span class="ml-2 font-semibold text-[#1F3A6B]"> Coordinates </span>
+            <span class="ml-2 font-semibold text-gray-400"> Coordinates </span>
           </div>
           <div class="flex-1 h-px bg-gray-400 mx-4"></div>
           <div class="flex items-center">
             <div
-              class="flex items-center justify-center rounded-full size-8 bg-gray-400 text-white poppins-semibold"
+              class="flex items-center justify-center rounded-full size-8 bg-[#1F3A6B] text-white poppins-semibold"
             >
               2
             </div>
-            <span class="ml-2 poppins text-gray-400"> Expenses </span>
+            <span class="ml-2 poppins text-[#1F3A6B]"> Expenses </span>
           </div>
           <div class="flex-1 h-px bg-gray-400 mx-4"></div>
           <div class="flex items-center">
@@ -70,57 +71,43 @@
       </div>
       <div class="px-24 bg-[#f2f2f2] grid grid-cols-12 py-12">
         <div
-          class="col-start-4 col-span-6 border-2 border-gray-400 gap-4 rounded-xl py-12 grid grid-rows-8 place-items-center"
+          class="col-start-4 col-span-6 border-2 border-gray-400 rounded-xl py-12 grid grid-rows-8 place-items-center"
         >
-          <div class="text-[#1F3A6B] text-3xl poppins-bold">
-            Where are you going?
+          <div
+            class="text-[#1F3A6B] text-2xl poppins-bold justify-self-start ml-24 pl-4"
+          >
+            Distance
           </div>
 
           <input
             type="text"
-            placeholder="From"
+            placeholder="123KM"
             class="bg-white drop-shadow-2xl border border-gray-400 rounded-lg text-xl text-gray-400 w-full max-w-md px-3 py-2"
           />
+          <div
+            class="text-[#1F3A6B] text-2xl poppins-bold justify-self-start ml-24 pl-4"
+          >
+            Fuel price (DT/L)
+          </div>
           <input
             type="text"
-            placeholder="To"
+            placeholder="2.525"
             class="bg-white drop-shadow-2xl border border-gray-400 rounded-lg text-xl text-gray-400 w-full max-w-md px-3 py-2"
           />
-
-          <div class="text-[#1F3A6B] text-3xl poppins-bold">When?</div>
-
-          <input
-            type="date"
-            placeholder="Select date"
-            class="bg-white drop-shadow-2xl border border-gray-400 rounded-lg text-xl text-gray-400 w-full max-w-md px-3 py-2"
-          />
-
-          <div class="text-[#1F3A6B] text-3xl poppins-bold">Seats</div>
-          <div class="flex items-center gap-4">
-            <div>
-              <button>
-                <img
-                  src="../src/assets/removeicon.png"
-                  class="border-2 border-gray-400 rounded-full"
-                />
-              </button>
-            </div>
-
-            <div>
-              <p class="text-[#1F3A6B] poppins-bold">1</p>
-            </div>
-            <div>
-              <button>
-                <img
-                  src="../src/assets/addicon.svg"
-                  class="border-2 border-gray-400 rounded-full"
-                />
-              </button>
-            </div>
+          <div
+            class="text-[#1F3A6B] text-2xl poppins-bold justify-self-start ml-24 pl-4"
+          >
+            Vehicle consumption
           </div>
-          <div class="flex items-end gap-2 mt-auto">
+          <input
+            type="text"
+            placeholder="12"
+            class="bg-white drop-shadow-2xl border border-gray-400 rounded-lg text-xl text-gray-400 w-full max-w-md px-3 py-2"
+          />
+
+          <div class="gap-2 row-start-8">
             <button
-              class="rounded-lg border-2 border-gray-400 text-gray-400 inter text-2xl self-end p-2"
+              class="rounded-lg border-2 border-gray-400 text-gray-400 inter text-2xl justify-self-end p-2"
             >
               Cancel
             </button>
