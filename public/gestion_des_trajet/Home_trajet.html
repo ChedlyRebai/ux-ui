@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Test</title>
+    <link href="../style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-00 min-h-screen">
+    <nav class="bg-primary h-[81px]">
+      <div class="mx-auto h-full center flex justify-between container">
+        <div class="logo w-1/4 flex items-center center justify-center">
+          <img
+            src="/public/assets/images/logo.png"
+            class="w-[140px] h-fit max-h-[81px]"
+            alt="Logo"
+          />
+        </div>
+
+        <ul
+          class="flex text-[24px] text-white font-poppins font-medium justify-between items-center w-2/4"
+        >
+          <li class="hover:underline">Home</li>
+          <li class="hover:underline">Simulation</li>
+          <li class="hover:underline">Payment</li>
+        </ul>
+
+        <div
+          class="flex w-1/4 container text-white justify-center gap-x-3 items-center"
+        >
+          <button
+            class="flex container items-center w-[148px] h-[48px] bg-[#D9D9D9]/50 rounded-full"
+          >
+            <img
+              src="/public/assets/icons/add.svg"
+              class="h-[22px] w-[22px] mr-2 inline-block text-white"
+              alt="Icon"
+            />
+            <p class="w-[105px] font-poppins font-medium h-[24px] rounded-full">
+              Create a ride
+            </p>
+          </button>
+          <button class="h-[48px] w-[48px] bg-[#D9D9D9]/50 rounded-full">
+            <img
+              src="/public/assets/icons/user.svg"
+              class="h-[24px] w-[24px] mx-auto"
+              alt="User Icon"
+            />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="w-[1196px] mx-auto">
+      <div class="flex-1 px-6 py-8 max-w-5xl mx-auto w-full">
+    
+        <div class="flex justify-end mb-8">
+          <button
+            class="px-8 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary transition"
+          >
+            ADD
+          </button>
+        </div>
+
+       
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+          >
+           
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Marssa ~ ariana
+            </h3>
+
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+            </div>
+
+           
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div>
+                <p class="font-medium text-gray-900">Donnia maazoum</p>
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg
+                    class="w-4 h-4 mr-1 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.963a1 1 0 00.95.69h4.163c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.963c.3.921-.755 1.688-1.538 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.783.57-1.838-.197-1.538-1.118l1.287-3.963a1 1 0 00-.364-1.118L2.05 9.39c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.963z"
+                    />
+                  </svg>
+                  4.8
+                </p>
+              </div>
+            </div>
+
+           
+            <div class="flex items-center text-gray-600">
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+              <span class="text-sm">4 seat left</span>
+            </div>
+          </div>
+
+               <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+          >
+           
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Marssa ~ ariana
+            </h3>
+
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+            </div>
+
+           
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div>
+                <p class="font-medium text-gray-900">Donnia maazoum</p>
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg
+                    class="w-4 h-4 mr-1 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.963a1 1 0 00.95.69h4.163c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.963c.3.921-.755 1.688-1.538 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.783.57-1.838-.197-1.538-1.118l1.287-3.963a1 1 0 00-.364-1.118L2.05 9.39c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.963z"
+                    />
+                  </svg>
+                  4.8
+                </p>
+              </div>
+            </div>
+
+           
+            <div class="flex items-center text-gray-600">
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+              <span class="text-sm">4 seat left</span>
+            </div>
+          </div>
+
+               <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+          >
+           
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Marssa ~ ariana
+            </h3>
+
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+            </div>
+
+           
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div>
+                <p class="font-medium text-gray-900">Donnia maazoum</p>
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg
+                    class="w-4 h-4 mr-1 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.963a1 1 0 00.95.69h4.163c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.963c.3.921-.755 1.688-1.538 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.783.57-1.838-.197-1.538-1.118l1.287-3.963a1 1 0 00-.364-1.118L2.05 9.39c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.963z"
+                    />
+                  </svg>
+                  4.8
+                </p>
+              </div>
+            </div>
+
+           
+            <div class="flex items-center text-gray-600">
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+              <span class="text-sm">4 seat left</span>
+            </div>
+          </div>
+
+               <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+          >
+           
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Marssa ~ ariana
+            </h3>
+
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+            </div>
+
+           
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div>
+                <p class="font-medium text-gray-900">Donnia maazoum</p>
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg
+                    class="w-4 h-4 mr-1 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.963a1 1 0 00.95.69h4.163c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.963c.3.921-.755 1.688-1.538 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.783.57-1.838-.197-1.538-1.118l1.287-3.963a1 1 0 00-.364-1.118L2.05 9.39c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.963z"
+                    />
+                  </svg>
+                  4.8
+                </p>
+              </div>
+            </div>
+
+           
+            <div class="flex items-center text-gray-600">
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+              <span class="text-sm">4 seat left</span>
+            </div>
+          </div>
+
+               <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+          >
+           
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Marssa ~ ariana
+            </h3>
+
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+            </div>
+
+           
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div>
+                <p class="font-medium text-gray-900">Donnia maazoum</p>
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg
+                    class="w-4 h-4 mr-1 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.963a1 1 0 00.95.69h4.163c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.963c.3.921-.755 1.688-1.538 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.783.57-1.838-.197-1.538-1.118l1.287-3.963a1 1 0 00-.364-1.118L2.05 9.39c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.963z"
+                    />
+                  </svg>
+                  4.8
+                </p>
+              </div>
+            </div>
+
+           
+            <div class="flex items-center text-gray-600">
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+              <span class="text-sm">4 seat left</span>
+            </div>
+          </div>
+
+               <div
+            class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+          >
+           
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">
+              Marssa ~ ariana
+            </h3>
+
+            
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+              <span
+                class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                >10:30 AM</span
+              >
+            </div>
+
+           
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div>
+                <p class="font-medium text-gray-900">Donnia maazoum</p>
+                <p class="text-sm text-gray-600 flex items-center">
+                  <svg
+                    class="w-4 h-4 mr-1 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.963a1 1 0 00.95.69h4.163c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.287 3.963c.3.921-.755 1.688-1.538 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.783.57-1.838-.197-1.538-1.118l1.287-3.963a1 1 0 00-.364-1.118L2.05 9.39c-.783-.57-.38-1.81.588-1.81h4.163a1 1 0 00.95-.69l1.286-3.963z"
+                    />
+                  </svg>
+                  4.8
+                </p>
+              </div>
+            </div>
+
+           
+            <div class="flex items-center text-gray-600">
+              <svg
+                class="w-6 h-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+              <span class="text-sm">4 seat left</span>
+            </div>
+          </div>
+
+         
+        </div>
+
+        <div class="flex justify-center mt-12">
+          <button
+            class="px-12 py-4 border hover:text-white  border-primary text-primary font-medium rounded-md hover:bg-primary transition"
+          >
+            Show More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary mb-0 bottom-full text-white h-[275px] w-screen">
+      <div
+        class="container ml-36 h-3/4 flex justify-between pt-10 bg-[url('/public/assets/images/logo.png')]"
+      >
+        <div class="w-1/4">
+          <h1 class="w-[350px] h-[96px] font-bold text-[36px]">
+            Rides that bring you closer
+          </h1>
+        </div>
+
+        <div class="font-bold flex justify-between items-start w-2/4">
+          <div>
+            <p class="text-gray-600">Explore</p>
+            <ul>
+              <li>Simulation</li>
+              <li>Payment</li>
+              <li>Create a Ride</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-gray-600">Support</p>
+            <ul>
+              <li>Contact Us</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-gray-600">Find Us Now</p>
+            <ul>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
