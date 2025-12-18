@@ -678,47 +678,16 @@ video {
   grid-column: span 8 / span 8;
 }
 
-.col-start-6 {
-  grid-column-start: 6;
-}
-
-.col-start-3 {
-  grid-column-start: 3;
-}
-
-.col-start-4 {
+.col-start-4{
   grid-column-start: 4;
-}
-
-.col-start-8 {
-  grid-column-start: 8;
 }
 
 .row-span-2{
   grid-row: span 2 / span 2;
 }
 
-.row-span-1 {
-  grid-row: span 1 / span 1;
-}
-
-.row-start-8 {
+.row-start-8{
   grid-row-start: 8;
-}
-
-.my-24 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mx-4{
@@ -757,6 +726,14 @@ video {
 
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.ml-24{
+  margin-left: 6rem;
 }
 
 .ml-36{
@@ -807,22 +784,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-24 {
-  margin-left: 6rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -851,21 +812,20 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.size-8{
+  width: 2rem;
+  height: 2rem;
+}
+
 .size-full{
   width: 100%;
   height: 100%;
 }
 
-.size-4 {
-  width: 1rem;
-  height: 1rem;
 .h-10{
   height: 2.5rem;
 }
 
-.size-8 {
-  width: 2rem;
-  height: 2rem;
 .h-12{
   height: 3rem;
 }
@@ -888,14 +848,6 @@ video {
 
 .h-6{
   height: 1.5rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-px {
-  height: 1px;
 }
 
 .h-8{
@@ -1079,30 +1031,6 @@ video {
   width: auto;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 .w-full{
   width: 100%;
 }
@@ -1119,6 +1047,10 @@ video {
   max-width: 48rem;
 }
 
+.max-w-4xl{
+  max-width: 56rem;
+}
+
 .max-w-5xl{
   max-width: 64rem;
 }
@@ -1129,6 +1061,10 @@ video {
 
 .max-w-7xl{
   max-width: 80rem;
+}
+
+.max-w-md{
+  max-width: 28rem;
 }
 
 .max-w-xl{
@@ -1160,10 +1096,6 @@ video {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1180,24 +1112,12 @@ video {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
-.grid-rows-8 {
+.grid-rows-8{
   grid-template-rows: repeat(8, minmax(0, 1fr));
 }
 
 .flex-row{
   flex-direction: row;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.place-items-center {
-  place-items: center;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .flex-col{
@@ -1208,8 +1128,16 @@ video {
   flex-wrap: wrap;
 }
 
+.place-items-center{
+  place-items: center;
+}
+
 .items-start{
   align-items: flex-start;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
@@ -1232,10 +1160,6 @@ video {
   justify-content: center;
 }
 
-.justify-stretch {
-  justify-content: stretch;
-}
-
 .justify-between{
   justify-content: space-between;
 }
@@ -1248,10 +1172,6 @@ video {
   gap: 2.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-12{
   gap: 3rem;
 }
@@ -1260,8 +1180,6 @@ video {
   gap: 0.5rem;
 }
 
-.self-end {
-  align-self: flex-end;
 .gap-3{
   gap: 0.75rem;
 }
@@ -1307,6 +1225,14 @@ video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.self-end{
+  align-self: flex-end;
+}
+
+.justify-self-start{
+  justify-self: start;
+}
+
 .justify-self-end{
   justify-self: end;
 }
@@ -1343,10 +1269,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-l-lg{
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -1361,8 +1283,6 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
 .border-2{
   border-width: 2px;
 }
@@ -1370,11 +1290,6 @@ video {
 .border-x-2{
   border-left-width: 2px;
   border-right-width: 2px;
-}
-
-.border-y-2 {
-  border-top-width: 2px;
-  border-bottom-width: 2px;
 }
 
 .border-y-2{
@@ -1388,6 +1303,11 @@ video {
 
 .border-b-2{
   border-bottom-width: 2px;
+}
+
+.border-\[\#1F3A6B\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(31 58 107 / var(--tw-border-opacity, 1));
 }
 
 .border-blue-500{
@@ -1420,19 +1340,9 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
-.border-\[\#1F3A6B\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(31 58 107 / var(--tw-border-opacity, 1));
-}
-
 .bg-\[\#1F3A6B\]{
   --tw-bg-opacity: 1;
   background-color: rgb(31 58 107 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#f2f2f2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(242 242 242 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#D9D9D9\]\/50{
@@ -1469,20 +1379,8 @@ video {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#C9A5A5\] {
 .bg-gray-400{
   --tw-bg-opacity: 1;
-  background-color: rgb(201 165 165 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#E5C9C9\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 201 201 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
   background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
 }
 
@@ -1506,8 +1404,6 @@ video {
   background-color: rgb(252 231 243 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\[\#1F3A6B\]\] {
-  background-color: [#1F3A6B];
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(31 58 107 / var(--tw-bg-opacity, 1));
@@ -1549,18 +1445,6 @@ video {
 
 .p-8{
   padding: 2rem;
-}
-
-.p-24 {
-  padding: 6rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .px-1{
@@ -1643,36 +1527,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.py-72 {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
-}
-
-.py-48 {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1680,6 +1534,10 @@ video {
 
 .pl-2{
   padding-left: 0.5rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .pl-8{
@@ -1708,14 +1566,6 @@ video {
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pl-24 {
-  padding-left: 6rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
 }
 
 .text-center{
@@ -1750,8 +1600,6 @@ video {
   line-height: 1;
 }
 
-.text-8xl {
-  font-size: 6rem;
 .text-8xl{
   font-size: 6rem;
   line-height: 1;
@@ -1790,14 +1638,6 @@ video {
 
 .font-bold{
   font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .font-medium{
@@ -1921,6 +1761,145 @@ video {
   transition-duration: 150ms;
 }
 
+.dancing-script {
+  font-family: "Dancing Script";
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playball-regular {
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .bg-blue-900 {
   background-color: #1f3a6b;
 }
@@ -1948,7 +1927,8 @@ footer h4 {
 }
 
 .title-poppins {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: #1f3a6b;
@@ -1969,7 +1949,8 @@ footer h4 {
   font-weight: 500;
   border: none;
   cursor: pointer;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   transition: background-color 0.2s;
 }
@@ -1985,7 +1966,8 @@ footer h4 {
   border-radius: 6px;
   color: #333;
   cursor: pointer;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   transition: background-color 0.2s, border-color 0.2s;
@@ -2001,7 +1983,8 @@ main.simulation-results .step-muted {
   background-color: #999999 !important;
   border-color: #999999 !important;
   color: #ffffff !important;
-  font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
 }
 
@@ -2009,19 +1992,22 @@ main.simulation-results .step-muted {
   background-color: #999999 !important;
   border-color: #999999 !important;
   color: #ffffff !important;
-  font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
 }
 
 main.simulation-results .bg-blue-900 {
   background-color: #1f3a6b !important;
   color: #ffffff !important;
-  font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
 }
 
 main.simulation-results span.text-gray-500 {
-  font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #999999;
@@ -2029,7 +2015,8 @@ main.simulation-results span.text-gray-500 {
 }
 
 main.simulation-results span.text-blue-900 {
-  font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #1f3a6b;
@@ -2037,7 +2024,8 @@ main.simulation-results span.text-blue-900 {
 }
 
 .simulation-results .results-title {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 40px;
   font-weight: 600;
   color: #1f3a6b;
@@ -2052,7 +2040,8 @@ main.simulation-results span.text-blue-900 {
 }
 
 .simulation-results .results-row span {
-  font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: #1f3a6b;
@@ -2060,7 +2049,8 @@ main.simulation-results span.text-blue-900 {
 }
 
 .simulation-results .results-row strong {
-  font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: #999999;
@@ -2069,7 +2059,8 @@ main.simulation-results span.text-blue-900 {
 .simulation-results .results-note {
   margin-top: 1.5rem;
   padding: 1rem;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   color: #999999;
   border: 1px solid #e5e5e5;
@@ -2117,7 +2108,8 @@ main.simulation-results span.text-blue-900 {
   font-weight: 500;
   border: none;
   cursor: pointer;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   transition: background-color 0.2s;
 }
@@ -2133,7 +2125,8 @@ main.simulation-results span.text-blue-900 {
   border-radius: 12px;
   color: #333;
   cursor: pointer;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   transition: background-color 0.2s, border-color 0.2s;
