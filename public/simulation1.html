@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulation1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-[#1F3A6B]">
+      <div
+        class="grid grid-cols-12 border-b-2 border-white py-2 px-24 items-center"
+      >
+        <div class="col-span-4 dancing-script text-white text-5xl">
+          CovoitEsprit
+        </div>
+        <div class="col-span-2 inter text-white text-2xl">Home</div>
+        <div class="col-span-2 inter text-white text-2xl">Simulation</div>
+        <div class="col-span-2 inter text-white text-2xl">Payment</div>
+        <div class="col-span-2 w-auto flex items-center justify-center">
+          <div
+            class="rounded-lg bg-white/20 flex-row flex items-center justify-start p-2 w-auto"
+          >
+            <img src="../src/ADD.svg" />
+            <p class="poppins-regular text-white">Create a ride</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#f2f2f2] flex flex-col place-items-center pt-12 gap-2">
+        <div class="text-5xl poppins-semibold text-[#1F3A6B]">
+          Trip Simulation
+        </div>
+        <div class="text-3xl poppins-semibold text-gray-400">
+          Calculate trip cost and duration before publishing
+        </div>
+        <div class="flex items-center w-full max-w-4xl mx-auto">
+          <div class="flex items-center">
+            <div
+              class="flex items-center justify-center rounded-full size-8 bg-[#1F3A6B] text-white poppins-semibold"
+            >
+              1
+            </div>
+            <span class="ml-2 font-semibold text-[#1F3A6B]"> Coordinates </span>
+          </div>
+          <div class="flex-1 h-px bg-gray-400 mx-4"></div>
+          <div class="flex items-center">
+            <div
+              class="flex items-center justify-center rounded-full size-8 bg-gray-400 text-white poppins-semibold"
+            >
+              2
+            </div>
+            <span class="ml-2 poppins text-gray-400"> Expenses </span>
+          </div>
+          <div class="flex-1 h-px bg-gray-400 mx-4"></div>
+          <div class="flex items-center">
+            <div
+              class="flex items-center justify-center rounded-full size-8 bg-gray-400 text-white poppins-semibold"
+            >
+              3
+            </div>
+            <span class="ml-2 poppins text-gray-400"> Results </span>
+          </div>
+        </div>
+      </div>
+      <div class="px-24 bg-[#f2f2f2] grid grid-cols-12 py-12">
+        <div
+          class="col-start-4 col-span-6 border-2 border-gray-400 gap-4 rounded-xl py-12 grid grid-rows-8 place-items-center"
+        >
+          <div class="text-[#1F3A6B] text-3xl poppins-bold">
+            Where are you going?
+          </div>
+
+          <input
+            type="text"
+            placeholder="From"
+            class="bg-white drop-shadow-2xl border border-gray-400 rounded-lg text-xl text-gray-400 w-full max-w-md px-3 py-2"
+          />
+          <input
+            type="text"
+            placeholder="To"
+            class="bg-white drop-shadow-2xl border border-gray-400 rounded-lg text-xl text-gray-400 w-full max-w-md px-3 py-2"
+          />
+
+          <div class="text-[#1F3A6B] text-3xl poppins-bold">When?</div>
+
+          <input
+            type="date"
+            placeholder="Select date"
+            class="bg-white drop-shadow-2xl border border-gray-400 rounded-lg text-xl text-gray-400 w-full max-w-md px-3 py-2"
+          />
+
+          <div class="text-[#1F3A6B] text-3xl poppins-bold">Seats</div>
+          <div class="flex items-center gap-4">
+            <div>
+              <button>
+                <img
+                  src="../src/assets/removeicon.png"
+                  class="border-2 border-gray-400 rounded-full"
+                />
+              </button>
+            </div>
+
+            <div>
+              <p class="text-[#1F3A6B] poppins-bold">1</p>
+            </div>
+            <div>
+              <button>
+                <img
+                  src="../src/assets/addicon.svg"
+                  class="border-2 border-gray-400 rounded-full"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="flex items-end gap-2 mt-auto">
+            <button
+              class="rounded-lg border-2 border-gray-400 text-gray-400 inter text-2xl self-end p-2"
+            >
+              Cancel
+            </button>
+            <button
+              class="rounded-lg border-2 border-[#1F3A6B] bg-[#1F3A6B] text-white inter text-2xl self-end p-2"
+            >
+              Next step
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-12 grid-rows-2 border-y-2 px-24 py-4 flex items-stretch border-white"
+      >
+        <div class="col-span-6 text-white text-4xl">
+          <p class="playfair-display flex justify-start">
+            Rides that bring you closer,
+          </p>
+          <p class="playball-regular pt-2 flex justify-start">Effortlessly</p>
+        </div>
+        <div
+          class="col-span-2 row-span-2 grid flex justify-items-center border-x-2 border-white"
+        >
+          <div class="justify-self-center montserrat text-[#999999]">
+            Explore
+          </div>
+          <div class="montserrat text-white">Simulation</div>
+          <div class="montserrat text-white">Payment</div>
+          <div class="montserrat text-white">Create a ride</div>
+        </div>
+        <div class="col-span-2 row-span-2 grid flex justify-items-center">
+          <div class="justify-self-center montserrat text-[#999999]">
+            Support
+          </div>
+          <div class="montserrat text-white">Contact us</div>
+          <div class="montserrat text-white">FAQs</div>
+        </div>
+        <div
+          class="col-span-2 row-span-2 grid flex justify-items-center border-x-2 border-white"
+        >
+          <div class="justify-self-center montserrat text-[#999999]">
+            Find us on
+          </div>
+          <div class="montserrat text-white">Instagram</div>
+          <div class="montserrat text-white">X</div>
+          <div class="montserrat text-white">Facebook</div>
+        </div>
+        <div
+          class="col-span-6 text-white flex justify-center pt-4 playball-regular text-8xl"
+        >
+          CovoitEsprit
+        </div>
+      </div>
+      <div class="text-[#1F3A6B] bg-#1F3A6B h-6"></div>
+    </div>
+  </body>
+</html>
