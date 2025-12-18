@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+
+    <!-- TAILWIND CDN (OBLIGATOIRE) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- TON CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-gray-100 min-h-screen paiement-page">
+
+    <!-- NAVBAR -->
+    <nav class="bg-[#1F3A6B] h-[81px]">
+      <div class="mx-auto h-full flex justify-between items-center max-w-7xl px-6">
+        
+        <!-- LOGO -->
+        <div class="w-1/4 flex justify-center">
+          <img
+            src="assets/images/logo.png"
+            class="w-[140px] h-fit"
+            alt="Logo"
+          />
+        </div>
+
+        <!-- MENU -->
+        <ul class="flex text-[24px] text-white font-medium gap-10 w-2/4 justify-center">
+          <li class="hover:underline cursor-pointer">Home</li>
+          <li class="hover:underline cursor-pointer">Simulation</li>
+          <li class="hover:underline cursor-pointer">Payment</li>
+        </ul>
+
+        <!-- ACTIONS -->
+        <div class="flex w-1/4 text-white justify-center gap-3 items-center">
+          <button class="flex items-center px-4 h-[48px] bg-white/20 rounded-full">
+            <img src="assets/icons/add.svg" class="h-[22px] w-[22px] mr-2" />
+            <span>Create a ride</span>
+          </button>
+
+          <button class="h-[48px] w-[48px] bg-white/20 rounded-full flex items-center justify-center">
+            <img src="assets/icons/user.svg" class="h-[24px] w-[24px]" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="w-[1196px] mx-auto">
+      <div class="px-6 py-8 max-w-3xl mx-auto w-full">
+        <h2 class="text-2xl font-semibold mb-6">Add a Ride</h2>
+
+        <div class="bg-white border rounded-2xl p-6 space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <input type="text" placeholder="Departure" class="border p-3 rounded-lg" />
+            <input type="text" placeholder="Destination" class="border p-3 rounded-lg" />
+          </div>
+
+          <div class="grid grid-cols-3 gap-4">
+            <input type="date" class="border p-3 rounded-lg" />
+            <input type="time" class="border p-3 rounded-lg" />
+            <input type="number" placeholder="Seats" class="border p-3 rounded-lg" />
+          </div>
+
+          <div>
+            <p class="font-medium mb-2">Atmosphere</p>
+            <div class="flex gap-3">
+              <button class="border p-3 rounded-lg">🎵</button>
+              <button class="border p-3 rounded-lg">💬</button>
+              <button class="border p-3 rounded-lg">❄️</button>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center mt-4">
+            <span class="font-semibold">Price</span>
+            <span class="text-primary font-bold">20 DT</span>
+          </div>
+
+          <div class="flex justify-end gap-4 mt-6">
+            <button class="px-6 py-2 border rounded-md">Cancel</button>
+            <button class="px-6 py-2 bg-primary text-white rounded-md">
+              Continue
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="bg-primary mb-0 bottom-full text-white h-[275px] w-screen">
+      <div
+        class="container ml-36 h-3/4 flex justify-between pt-10 bg-[url('/public/assets/images/logo.png')]"
+      >
+        <div class="w-1/4">
+          <h1 class="w-[350px] h-[96px] font-bold text-[36px]">
+            Rides that bring you closer
+          </h1>
+        </div>
+
+        <div class="font-bold flex justify-between items-start w-2/4">
+          <div>
+            <p class="text-gray-600">Explore</p>
+            <ul>
+              <li>Simulation</li>
+              <li>Payment</li>
+              <li>Create a Ride</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-gray-600">Support</p>
+            <ul>
+              <li>Contact Us</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-gray-600">Find Us Now</p>
+            <ul>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
