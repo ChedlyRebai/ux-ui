@@ -1,0 +1,2350 @@
+.header {
+  background-color: #1e3a8a;
+  width: 100%;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.header-nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .header-nav {
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+.header-logo {
+  flex-shrink: 0;
+}
+.header-logo .logo-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  font-style: italic;
+  margin: 0;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .header-logo .logo-text {
+    font-size: 1.5rem;
+  }
+}
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex: 1;
+  justify-content: center;
+}
+@media (max-width: 968px) {
+  .header-links {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .header-links {
+    order: 3;
+    width: 100%;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+}
+.header .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+.header .nav-link:hover {
+  opacity: 0.8;
+}
+.header .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ffffff;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .header-actions {
+    gap: 0.75rem;
+  }
+}
+.header-button {
+  background-color: #3b82f6;
+  border: none;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.header-button:hover {
+  background-color: rgb(11.1512195122, 99.1219512195, 242.8487804878);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.header-button:active {
+  transform: translateY(0);
+}
+.header-button .button-icon {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.header-button .button-text {
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
+  .header-button .button-text {
+    display: none;
+  }
+}
+.header-profile .profile-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+.header-profile .profile-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+.header-profile .profile-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 4rem 2rem 2rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 968px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.footer-slogan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-family: Georgia, "Times New Roman", serif;
+  margin-bottom: 1rem;
+}
+.footer-slogan .slogan-line {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  font-weight: 400;
+}
+.footer-slogan .slogan-line.slogan-large {
+  font-size: 1.4rem;
+}
+.footer-slogan .slogan-line.slogan-italic {
+  font-style: italic;
+  font-size: 1rem;
+}
+.footer-logo {
+  font-size: 8rem;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  font-style: italic;
+  margin: 0;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  position: relative;
+  z-index: 1;
+  transform: translateX(-20px);
+  white-space: nowrap;
+  overflow: visible;
+}
+@media (max-width: 1200px) {
+  .footer-logo {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer-logo {
+    font-size: 4rem;
+    transform: translateX(0);
+  }
+}
+.footer-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  align-items: start;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 968px) {
+  .footer-right {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.footer-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  display: inline-block;
+}
+.footer-link:hover {
+  opacity: 0.8;
+}
+.footer-link.footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-social-link .social-icon {
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.login-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+}
+.login-page .top-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #3b82f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.login-page .login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+@media (max-width: 968px) {
+  .login-page .login-container {
+    grid-template-columns: 1fr;
+  }
+}
+.login-page .login-left {
+  background-color: #ffffff;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 968px) {
+  .login-page .login-left {
+    padding: 3rem 2rem;
+    max-width: 100%;
+  }
+}
+.login-page .login-header {
+  margin-bottom: 3rem;
+}
+.login-page .login-header .login-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0 0 0.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .login-header .login-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .account-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.login-page .account-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.login-page .account-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.login-page .account-card .card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.login-page .account-card .card-icon.client-icon {
+  background-color: #1e3a8a;
+}
+.login-page .account-card .card-icon.driver-icon {
+  background-color: #10b981;
+}
+.login-page .account-card .card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.login-page .account-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 0.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .account-card .card-description {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .account-card .card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  transition: all 0.3s ease;
+}
+.login-page .account-card .card-link.client-link {
+  color: #3b82f6;
+}
+.login-page .account-card .card-link.client-link:hover {
+  color: #1e3a8a;
+}
+.login-page .account-card .card-link.driver-link {
+  color: #10b981;
+}
+.login-page .account-card .card-link.driver-link:hover {
+  color: rgb(11.9402985075, 138.0597014925, 96.2686567164);
+}
+.login-page .account-card .card-link .arrow-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+.login-page .account-card .card-link:hover .arrow-icon {
+  transform: translateX(4px);
+}
+.login-page .divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .divider .divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+}
+.login-page .divider .divider-text {
+  white-space: nowrap;
+}
+.login-page .social-login {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 480px) {
+  .login-page .social-login {
+    flex-direction: column;
+  }
+}
+.login-page .social-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .social-button:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+.login-page .social-button .social-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.login-page .social-button.google-button .social-icon {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+.login-page .social-button.facebook-button .social-icon {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+.login-page .signup-link {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .signup-link .signup-text {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-right: 0.5rem;
+}
+.login-page .signup-link .signup-button {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+.login-page .signup-link .signup-button:hover {
+  color: #1e3a8a;
+}
+.login-page .login-right {
+  background-color: #1e3a8a;
+  padding: 4rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+@media (max-width: 968px) {
+  .login-page .login-right {
+    padding: 3rem 2rem;
+    min-height: 500px;
+  }
+}
+.login-page .welcome-content {
+  max-width: 500px;
+  width: 100%;
+}
+.login-page .welcome-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+@media (max-width: 968px) {
+  .login-page .welcome-title {
+    font-size: 2rem;
+  }
+}
+.login-page .welcome-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 3rem 0;
+  opacity: 0.95;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.login-page .feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .feature-item .feature-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+.login-page .feature-item .feature-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.login-page .statistics {
+  display: flex;
+  gap: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 480px) {
+  .login-page .statistics {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+}
+.login-page .stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.login-page .stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.login-page .stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.booking-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f4f6;
+}
+.booking-page .booking-main {
+  flex: 1;
+  padding: 2rem 0;
+}
+.booking-page .booking-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+}
+@media (max-width: 968px) {
+  .booking-page .booking-container {
+    grid-template-columns: 1fr;
+  }
+}
+.booking-page .booking-form-section {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.booking-page .booking-header {
+  margin-bottom: 2.5rem;
+}
+.booking-page .booking-header .booking-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0 0 0.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .booking-header .booking-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .form-section {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.booking-page .form-section .section-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.booking-page .form-section .section-content {
+  flex: 1;
+}
+.booking-page .form-section .section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0 0 1.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .form-group {
+  margin-bottom: 1.5rem;
+}
+.booking-page .form-group .form-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .form-group .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.booking-page .form-group .input-wrapper .input-icon {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+.booking-page .form-group .input-wrapper .input-icon.destination-icon {
+  color: #ef4444;
+}
+.booking-page .form-group .input-wrapper .form-input {
+  width: 100%;
+  padding: 0.875rem 1rem 0.875rem 3rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .form-group .input-wrapper .form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+.booking-page .form-group .input-wrapper .dropdown-icon {
+  position: absolute;
+  right: 1rem;
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+.booking-page .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.booking-page .passenger-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: fit-content;
+}
+.booking-page .passenger-control .passenger-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: #f3f4f6;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  transition: all 0.2s ease;
+}
+.booking-page .passenger-control .passenger-btn:hover {
+  background-color: #e5e7eb;
+}
+.booking-page .passenger-control .passenger-count {
+  min-width: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.booking-page .payment-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.booking-page .payment-card:hover {
+  border-color: #3b82f6;
+}
+.booking-page .payment-card.selected {
+  border-color: #3b82f6;
+  background-color: rgba(59, 130, 246, 0.05);
+}
+.booking-page .payment-card.selected .payment-check {
+  display: flex;
+}
+.booking-page .payment-card.selected .payment-radio {
+  display: none;
+}
+.booking-page .payment-card .payment-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.booking-page .payment-card .payment-icon.cash-icon {
+  background-color: #3b82f6;
+}
+.booking-page .payment-card .payment-icon.card-icon {
+  background-color: #f3f4f6;
+}
+.booking-page .payment-card .payment-info {
+  flex: 1;
+}
+.booking-page .payment-card .payment-info .payment-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0 0 0.25rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .payment-card .payment-info .payment-subtitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .payment-card .payment-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #3b82f6;
+  color: #ffffff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.booking-page .payment-card .payment-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #e5e7eb;
+}
+.booking-page .confirm-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .confirm-button:hover {
+  background-color: rgb(11.1512195122, 99.1219512195, 242.8487804878);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+.booking-page .confirm-button .check-icon {
+  font-size: 1.2rem;
+}
+.booking-page .booking-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.booking-page .summary-card,
+.booking-page .popular-trips-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.booking-page .summary-title,
+.booking-page .popular-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0 0 1.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .summary-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.booking-page .summary-item .summary-icon {
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
+}
+.booking-page .summary-item .summary-icon.destination-icon {
+  color: #ef4444;
+}
+.booking-page .summary-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.booking-page .summary-item .summary-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .summary-item .summary-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1e3a8a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .summary-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 1.5rem 0;
+}
+.booking-page .summary-price .price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .summary-price .price-row.total {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e5e7eb;
+}
+.booking-page .secure-payment-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #10b981;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+}
+.booking-page .secure-payment-box .secure-icon {
+  font-size: 1.5rem;
+}
+.booking-page .secure-payment-box strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .secure-payment-box p {
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .popular-trip-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+.booking-page .popular-trip-item:last-child {
+  border-bottom: none;
+}
+.booking-page .popular-trip-item .trip-icon {
+  font-size: 1.2rem;
+}
+.booking-page .popular-trip-item .trip-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.booking-page .popular-trip-item .trip-info .trip-route {
+  font-size: 0.95rem;
+  color: #1e3a8a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.booking-page .popular-trip-item .trip-info .trip-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3b82f6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.payment-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f4f6;
+}
+.payment-page .payment-main {
+  flex: 1;
+  padding: 2rem 0;
+}
+.payment-page .payment-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.payment-page .breadcrumbs {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .breadcrumbs a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+.payment-page .breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.payment-page .breadcrumbs span {
+  margin: 0 0.5rem;
+}
+.payment-page .payment-header {
+  margin-bottom: 2rem;
+}
+.payment-page .payment-header .payment-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0 0 0.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .payment-header .payment-subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .payment-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+@media (max-width: 968px) {
+  .payment-page .payment-content {
+    grid-template-columns: 1fr;
+  }
+}
+.payment-page .trip-summary-card,
+.payment-page .payment-method-card,
+.payment-page .payment-details-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+.payment-page .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.payment-page .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .confirmed-badge {
+  background-color: #10b981;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .reservation-id {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .route-details {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.payment-page .route-line {
+  position: absolute;
+  left: 12px;
+  top: 30px;
+  bottom: 30px;
+  width: 2px;
+  background-color: #e5e7eb;
+}
+.payment-page .route-points {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.payment-page .route-point {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+.payment-page .route-point .point-icon {
+  font-size: 1.5rem;
+  z-index: 1;
+}
+.payment-page .route-point .point-info {
+  flex: 1;
+}
+.payment-page .route-point .point-info .point-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .route-point .point-info .point-location {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .route-point .point-info .point-date {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .route-meta {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-left: 2.5rem;
+}
+.payment-page .route-meta .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .driver-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.payment-page .driver-info .driver-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.payment-page .driver-info .driver-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.payment-page .driver-info .driver-details {
+  flex: 1;
+}
+.payment-page .driver-info .driver-details .driver-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .driver-info .driver-details .driver-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .driver-info .driver-details .driver-rating .rating-value {
+  font-weight: 600;
+}
+.payment-page .driver-info .driver-details .driver-rating .star-icon {
+  color: #fbbf24;
+}
+.payment-page .vehicle-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+}
+.payment-page .vehicle-info .vehicle-label {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .vehicle-info .vehicle-model {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.payment-page .payment-option {
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.payment-page .payment-option:hover {
+  border-color: #3b82f6;
+}
+.payment-page .payment-option.selected {
+  border-color: #8b5cf6;
+  background-color: rgba(139, 92, 246, 0.05);
+}
+.payment-page .payment-option.selected .option-radio {
+  background-color: #8b5cf6;
+  border-color: #8b5cf6;
+}
+.payment-page .payment-option.selected .option-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.payment-page .payment-option .option-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.payment-page .payment-option .option-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #e5e7eb;
+  position: relative;
+  flex-shrink: 0;
+}
+.payment-page .payment-option .option-info {
+  flex: 1;
+}
+.payment-page .payment-option .option-info .option-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .payment-option .card-logos {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .card-form {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+.payment-page .card-form .form-group {
+  margin-bottom: 1.5rem;
+}
+.payment-page .card-form .form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .card-form .form-group input {
+  width: 100%;
+  padding: 0.875rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .card-form .form-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+.payment-page .card-form .input-with-icon {
+  position: relative;
+}
+.payment-page .card-form .input-with-icon .input-icon-right {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.payment-page .card-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.payment-page .card-form .form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.payment-page .card-form .form-checkbox input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.payment-page .card-form .form-checkbox label {
+  font-size: 0.9rem;
+  color: #6b7280;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .promo-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+.payment-page .promo-section .promo-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0 0 1rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .promo-section .promo-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+.payment-page .promo-section .promo-input-group input {
+  flex: 1;
+  padding: 0.875rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .promo-section .promo-input-group .promo-button {
+  padding: 0.875rem 1.5rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .promo-section .promo-input-group .promo-button:hover {
+  background-color: rgb(11.1512195122, 99.1219512195, 242.8487804878);
+}
+.payment-page .price-breakdown {
+  margin-bottom: 1rem;
+}
+.payment-page .price-breakdown .price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .price-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 1rem 0;
+}
+.payment-page .total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .pay-now-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .pay-now-button:hover {
+  background-color: rgb(11.1512195122, 99.1219512195, 242.8487804878);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+.payment-page .secure-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #10b981;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .cancellation-box {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.payment-page .cancellation-box .box-icon {
+  font-size: 1.5rem;
+}
+.payment-page .cancellation-box strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .cancellation-box p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .terms-text {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .terms-text a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+.payment-page .terms-text a:hover {
+  text-decoration: underline;
+}
+.payment-page .payment-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+@media (max-width: 968px) {
+  .payment-page .payment-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .payment-page .payment-features {
+    grid-template-columns: 1fr;
+  }
+}
+.payment-page .payment-features .feature-block {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.payment-page .payment-features .feature-block .feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+.payment-page .payment-features .feature-block .feature-icon.green {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+.payment-page .payment-features .feature-block .feature-icon.blue {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+.payment-page .payment-features .feature-block .feature-icon.purple {
+  background-color: rgba(139, 92, 246, 0.1);
+}
+.payment-page .payment-features .feature-block .feature-icon.orange {
+  background-color: rgba(249, 115, 22, 0.1);
+}
+.payment-page .payment-features .feature-block strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #1e3a8a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.payment-page .payment-features .feature-block p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.confirmation-page {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #fce7f3 0%, #fce7f3 50%, transparent 50%), repeating-linear-gradient(90deg, transparent 0%, transparent 4%, #ffffff 4%, #ffffff 5%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+.confirmation-page::before, .confirmation-page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #1e3a8a;
+}
+.confirmation-page::before {
+  top: 0;
+}
+.confirmation-page::after {
+  bottom: 0;
+}
+.confirmation-page .confirmation-container {
+  max-width: 800px;
+  width: 100%;
+}
+.confirmation-page .confirmation-content {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.confirmation-page .confirmation-thanks {
+  font-size: 1.5rem;
+  color: #6b7280;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.confirmation-page .confirmation-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6b7280;
+  margin: 0 0 3rem 0;
+  line-height: 1.3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.confirmation-page .confirmation-reference {
+  text-align: center;
+  margin: 3rem 0;
+}
+.confirmation-page .confirmation-reference .reference-label {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.confirmation-page .confirmation-reference .reference-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8b5cf6;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.confirmation-page .confirmation-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.confirmation-page .message-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.confirmation-page .message-item .check-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #10b981;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+.confirmation-page .message-item p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.confirmation-page .message-item p strong {
+  color: #8b5cf6;
+  font-weight: 700;
+}
+
+.dashboard-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+.dashboard-page .dashboard-sidebar {
+  width: 250px;
+  background-color: #1e3a8a;
+  padding: 2rem 0;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .dashboard-page .dashboard-sidebar {
+    width: 80px;
+  }
+}
+.dashboard-page .sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+.dashboard-page .sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.dashboard-page .sidebar-item.active {
+  background-color: #3b82f6;
+}
+.dashboard-page .sidebar-item .sidebar-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+}
+.dashboard-page .sidebar-item .sidebar-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .dashboard-page .sidebar-item .sidebar-text {
+    display: none;
+  }
+}
+.dashboard-page .dashboard-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+.dashboard-page .summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 968px) {
+  .dashboard-page .summary-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.dashboard-page .summary-card {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.dashboard-page .summary-card.balance-card {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: #ffffff;
+}
+.dashboard-page .summary-card.income-card, .dashboard-page .summary-card.pending-card {
+  background-color: #ffffff;
+}
+.dashboard-page .summary-card .card-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.dashboard-page .summary-card .card-icon-wrapper .card-icon {
+  font-size: 1.5rem;
+}
+.dashboard-page .summary-card .card-icon-wrapper.green {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+.dashboard-page .summary-card .card-icon-wrapper.orange {
+  background-color: rgba(249, 115, 22, 0.1);
+}
+.dashboard-page .summary-card .card-content {
+  flex: 1;
+}
+.dashboard-page .summary-card .card-content .card-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+.dashboard-page .summary-card .card-content .card-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0 0 0.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .summary-card .card-content .card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .summary-card .card-content .card-value.dark {
+  color: #1e3a8a;
+}
+.dashboard-page .summary-card .card-content .card-change,
+.dashboard-page .summary-card .card-content .card-percentage {
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .summary-card .card-content .card-change.positive,
+.dashboard-page .summary-card .card-content .card-percentage.positive {
+  color: #10b981;
+}
+.dashboard-page .summary-card .card-content .card-change .arrow,
+.dashboard-page .summary-card .card-content .card-percentage .arrow {
+  margin-right: 0.25rem;
+}
+.dashboard-page .summary-card .card-content .card-status {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f97316;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .summary-card .card-content .card-detail {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 968px) {
+  .dashboard-page .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.dashboard-page .chart-card,
+.dashboard-page .transactions-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.dashboard-page .chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.dashboard-page .chart-title,
+.dashboard-page .transactions-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .chart-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+.dashboard-page .tab {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6b7280;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .tab.active {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+.dashboard-page .tab:hover {
+  background-color: #e5e7eb;
+}
+.dashboard-page .chart-container {
+  height: 200px;
+}
+.dashboard-page .bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  gap: 0.5rem;
+}
+.dashboard-page .bar {
+  flex: 1;
+  background: linear-gradient(to top, #3b82f6, #1e3a8a);
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  min-height: 30px;
+}
+.dashboard-page .bar span {
+  font-size: 0.75rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.dashboard-page .show-all-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .show-all-link:hover {
+  text-decoration: underline;
+}
+.dashboard-page .transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.dashboard-page .transaction-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+}
+.dashboard-page .transaction-item .transaction-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.dashboard-page .transaction-item .transaction-icon.positive {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+.dashboard-page .transaction-item .transaction-icon.negative {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+.dashboard-page .transaction-item .transaction-info {
+  flex: 1;
+}
+.dashboard-page .transaction-item .transaction-info .transaction-route {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .transaction-item .transaction-info .transaction-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .transaction-item .transaction-amount {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .transaction-item .transaction-amount.positive {
+  color: #10b981;
+}
+.dashboard-page .transaction-item .transaction-amount.negative {
+  color: #ef4444;
+}
+.dashboard-page .dashboard-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 968px) {
+  .dashboard-page .dashboard-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+.dashboard-page .stats-card,
+.dashboard-page .performance-card,
+.dashboard-page .payments-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.dashboard-page .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0 0 1.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.dashboard-page .stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.dashboard-page .stat-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.dashboard-page .stat-row span {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .stat-row strong {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .stat-row strong.positive {
+  color: #10b981;
+}
+.dashboard-page .performance-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.dashboard-page .metric-item .metric-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .metric-item .metric-header .metric-value {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+.dashboard-page .metric-item .progress-bar {
+  height: 8px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.dashboard-page .metric-item .progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #1e3a8a);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+.dashboard-page .payment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.dashboard-page .payment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .payment-item .payment-status {
+  color: #3b82f6;
+  font-weight: 600;
+}
+.dashboard-page .payment-item .payment-date,
+.dashboard-page .payment-item .payment-amount {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+.dashboard-page .payment-detail {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .setup-button {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: #f3f4f6;
+  color: #1e3a8a;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.dashboard-page .setup-button:hover {
+  background-color: #e5e7eb;
+}
+
+.pending-requests-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+.pending-requests-page .dashboard-sidebar {
+  width: 250px;
+  background-color: #1e3a8a;
+  padding: 2rem 0;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .pending-requests-page .dashboard-sidebar {
+    width: 80px;
+  }
+}
+.pending-requests-page .sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+.pending-requests-page .sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.pending-requests-page .sidebar-item.active {
+  background-color: #3b82f6;
+}
+.pending-requests-page .sidebar-item .sidebar-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+}
+.pending-requests-page .sidebar-item .sidebar-text {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .pending-requests-page .sidebar-item .sidebar-text {
+    display: none;
+  }
+}
+.pending-requests-page .sidebar-item .badge {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.pending-requests-page .pending-main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+.pending-requests-page .page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0 0 2rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.pending-requests-page .request-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.pending-requests-page .request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.pending-requests-page .user-info {
+  display: flex;
+  gap: 1rem;
+}
+.pending-requests-page .user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.pending-requests-page .user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pending-requests-page .user-details {
+  flex: 1;
+}
+.pending-requests-page .user-details .user-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .user-details .user-phone {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .user-details .user-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .user-details .user-rating .rating-value {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+.pending-requests-page .user-details .user-rating .star {
+  color: #fbbf24;
+  font-size: 1.1rem;
+}
+.pending-requests-page .user-details .user-rating .trips-count {
+  color: #6b7280;
+}
+.pending-requests-page .waiting-time {
+  background-color: rgba(59, 130, 246, 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  min-width: 100px;
+}
+.pending-requests-page .waiting-time .waiting-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .waiting-time .waiting-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3b82f6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .request-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.pending-requests-page .route-point {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.pending-requests-page .route-point .point-icon {
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+.pending-requests-page .route-point .point-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .route-point .point-address {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e3a8a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .request-summary {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+}
+@media (max-width: 480px) {
+  .pending-requests-page .request-summary {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+.pending-requests-page .request-summary .summary-item {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .request-summary .summary-item .summary-label {
+  color: #6b7280;
+}
+.pending-requests-page .request-summary .summary-item .summary-value {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+.pending-requests-page .request-actions {
+  display: flex;
+  gap: 1rem;
+}
+.pending-requests-page .action-button {
+  flex: 1;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.pending-requests-page .action-button.accept {
+  background-color: #ffffff;
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+.pending-requests-page .action-button.accept.primary {
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+.pending-requests-page .action-button.accept:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+.pending-requests-page .action-button.decline {
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+.pending-requests-page .action-button.decline.secondary {
+  background-color: #ffffff;
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+.pending-requests-page .action-button.decline:hover {
+  background-color: #ef4444;
+  border-color: #ef4444;
+}
+.pending-requests-page .action-button .action-icon {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/*# sourceMappingURL=styles.css.map */

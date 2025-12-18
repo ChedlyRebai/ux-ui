@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoutEsprit - Dashboard</title>
+  <link rel="stylesheet" href="h.css">
+</head>
+<body><div class="dashboard-page">
+  <!-- Sidebar -->
+  <aside class="dashboard-sidebar">
+    <nav class="sidebar-nav">
+      <div class="sidebar-item active">
+        <span class="sidebar-icon">📊</span>
+        <span class="sidebar-text">Dashboard</span>
+      </div>
+      <div class="sidebar-item" id="my-trips-item">
+        <span class="sidebar-icon">🚗</span>
+        <span class="sidebar-text">My trips</span>
+      </div>
+      <div class="sidebar-item">
+        <span class="sidebar-icon">👥</span>
+        <span class="sidebar-text">Passengers</span>
+      </div>
+      <div class="sidebar-item">
+        <span class="sidebar-icon">💰</span>
+        <span class="sidebar-text">Wallet</span>
+      </div>
+      <div class="sidebar-item">
+        <span class="sidebar-icon">⚙️</span>
+        <span class="sidebar-text">Settings</span>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="dashboard-main">
+    <!-- Summary cards -->
+    <div class="summary-cards">
+      <div class="summary-card balance-card">
+        <div class="card-icon-wrapper">
+          <div class="card-icon">💰</div>
+        </div>
+        <div class="card-content">
+          <p class="card-label">Available balance</p>
+          <h2 class="card-value">2,847 TND</h2>
+          <p class="card-change positive">
+            <span class="arrow">↑</span>
+            +12% this month
+          </p>
+        </div>
+      </div>
+
+      <div class="summary-card income-card">
+        <div class="card-icon-wrapper green">
+          <div class="card-icon">📈</div>
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="card-percentage positive">+8.2%</span>
+          </div>
+          <p class="card-label">This month's income</p>
+          <h2 class="card-value dark">1,245 TND</h2>
+          <p class="card-detail">42 Completed trips</p>
+        </div>
+      </div>
+
+      <div class="summary-card pending-card">
+        <div class="card-icon-wrapper orange">
+          <div class="card-icon">💵</div>
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="card-status">En attente</span>
+          </div>
+          <p class="card-label">Revenus en attente</p>
+          <h2 class="card-value dark">156 TND</h2>
+          <p class="card-detail">3 paiements en cours</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graphique et transactions -->
+    <div class="dashboard-grid">
+      <div class="chart-card">
+        <div class="chart-header">
+          <h3 class="chart-title">Income by period</h3>
+          <div class="chart-tabs">
+            <button class="tab active">Day</button>
+            <button class="tab">Month</button>
+            <button class="tab">Year</button>
+          </div>
+        </div>
+        <div class="chart-container">
+          <div class="bar-chart">
+            <div class="bar" style="height: 40%"><span>Mon</span></div>
+            <div class="bar" style="height: 60%"><span>Tue</span></div>
+            <div class="bar" style="height: 30%"><span>Wed</span></div>
+            <div class="bar" style="height: 50%"><span>Thu</span></div>
+            <div class="bar" style="height: 70%"><span>Fri</span></div>
+            <div class="bar" style="height: 100%"><span>Sat</span></div>
+            <div class="bar" style="height: 80%"><span>Sun</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="transactions-card">
+        <div class="transactions-header">
+          <h3 class="transactions-title">Recent transactions</h3>
+          <a href="#" class="show-all-link">Show all</a>
+        </div>
+        <div class="transactions-list">
+          <div class="transaction-item">
+            <div class="transaction-icon positive">+</div>
+            <div class="transaction-info">
+              <div class="transaction-route">ESPRIT → Soussa</div>
+              <div class="transaction-date">Aujourd'hui, 14:30</div>
+            </div>
+            <div class="transaction-amount positive">+45 TND</div>
+          </div>
+          <div class="transaction-item">
+            <div class="transaction-icon positive">+</div>
+            <div class="transaction-info">
+              <div class="transaction-route">Nabeul → Esprit</div>
+              <div class="transaction-date">Hier, 09:15</div>
+            </div>
+            <div class="transaction-amount positive">+32 TND</div>
+          </div>
+          <div class="transaction-item">
+            <div class="transaction-icon negative">-</div>
+            <div class="transaction-info">
+              <div class="transaction-route">Refund</div>
+              <div class="transaction-date">2 jours, Annulation</div>
+            </div>
+            <div class="transaction-amount negative">-18 TND</div>
+          </div>
+          <div class="transaction-item">
+            <div class="transaction-icon positive">+</div>
+            <div class="transaction-info">
+              <div class="transaction-route">Technopole ghazella → Bordeaux</div>
+              <div class="transaction-date">3 jours, 16:45</div>
+            </div>
+            <div class="transaction-amount positive">+28 TND</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Statistiques, Performance, Paiements -->
+    <div class="dashboard-bottom">
+      <div class="stats-card">
+        <h3 class="card-title">Monthly statistics</h3>
+        <div class="stats-list">
+          <div class="stat-row">
+            <span>Completed trips</span>
+            <strong>42</strong>
+          </div>
+          <div class="stat-row">
+            <span>Distance traveled</span>
+            <strong>2,847 km</strong>
+          </div>
+          <div class="stat-row">
+            <span>Passengers transported</span>
+            <strong>89</strong>
+          </div>
+          <div class="stat-row">
+            <span>Occupancy rate</span>
+            <strong class="positive">78%</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="performance-card">
+        <h3 class="card-title">Performance</h3>
+        <div class="performance-metrics">
+          <div class="metric-item">
+            <div class="metric-header">
+              <span>Average rating</span>
+              <span class="metric-value">4.8/5</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 96%"></div>
+            </div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-header">
+              <span>Punctuality</span>
+              <span class="metric-value">94%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 94%"></div>
+            </div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-header">
+              <span>Acceptance rate</span>
+              <span class="metric-value">89%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 89%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="payments-card">
+        <h3 class="card-title">Upcoming payments</h3>
+        <div class="payment-info">
+          <div class="payment-item">
+            <span>Automatic payment</span>
+            <span class="payment-status">Actif</span>
+          </div>
+          <p class="payment-detail">Every Friday</p>
+          <div class="payment-item">
+            <span>Next transfer</span>
+            <span class="payment-date">Friday 24 Nov</span>
+          </div>
+          <div class="payment-item">
+            <span>Estimated amount</span>
+            <span class="payment-amount">387 TND</span>
+          </div>
+          <button class="setup-button">Set up payments</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+  // Navigation vers pending-requests.html when clicking on "My trips"
+  document.addEventListener('DOMContentLoaded', function() {
+    const myTripsItem = document.getElementById('my-trips-item');
+    
+    if (myTripsItem) {
+      myTripsItem.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'pending-requests.html';
+      });
+    }
+  });
+</script>
+</body>
+</html>
+
