@@ -3,242 +3,428 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoutEsprit - Dashboard</title>
+    <title>CoutEsprit - Complete your booking</title>
     <link rel="stylesheet" href="m.css" />
   </head>
   <body>
-    <div class="dashboard-page">
-      <!-- Sidebar -->
-      <aside class="dashboard-sidebar">
-        <nav class="sidebar-nav">
-          <div class="sidebar-item active">
-            <span class="sidebar-icon">📊</span>
-            <span class="sidebar-text">Dashboard</span>
+    <div class="payment-page">
+      <!-- Header -->
+      <header class="header">
+        <nav class="header-nav">
+          <div class="header-logo">
+            <h1 class="logo-text">CoutEsprit</h1>
           </div>
-          <div class="sidebar-item" id="my-trips-item">
-            <span class="sidebar-icon">🚗</span>
-            <span class="sidebar-text">My trips</span>
+
+          <div class="header-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Simulation</a>
+            <a href="#" class="nav-link active">Payment</a>
           </div>
-          <div class="sidebar-item">
-            <span class="sidebar-icon">👥</span>
-            <span class="sidebar-text">Passengers</span>
-          </div>
-          <div class="sidebar-item">
-            <span class="sidebar-icon">💰</span>
-            <span class="sidebar-text">Wallet</span>
-          </div>
-          <div class="sidebar-item">
-            <span class="sidebar-icon">⚙️</span>
-            <span class="sidebar-text">Settings</span>
+
+          <div class="header-actions">
+            <button class="header-button">
+              <span class="button-icon">+</span>
+              <span class="button-text">Create a ride</span>
+            </button>
+            <div class="header-profile">
+              <div class="profile-icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.59 22C20.59 18.13 16.74 15 12 15C7.26 15 3.41 18.13 3.41 22"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </nav>
-      </aside>
+      </header>
 
-      <!-- Main Content -->
-      <main class="dashboard-main">
-        <!-- Summary cards -->
-        <div class="summary-cards">
-          <div class="summary-card balance-card">
-            <div class="card-icon-wrapper">
-              <div class="card-icon">💰</div>
-            </div>
-            <div class="card-content">
-              <p class="card-label">Available balance</p>
-              <h2 class="card-value">2,847 TND</h2>
-              <p class="card-change positive">
-                <span class="arrow">↑</span>
-                +12% this month
-              </p>
-            </div>
+      <main class="payment-main">
+        <div class="payment-container">
+          <!-- Breadcrumbs -->
+          <div class="breadcrumbs">
+            <a href="#">Home</a>
+            <span> > </span>
+            <a href="#">Reservations</a>
+            <span> > </span>
+            <span>Paiement</span>
           </div>
 
-          <div class="summary-card income-card">
-            <div class="card-icon-wrapper green">
-              <div class="card-icon">📈</div>
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <span class="card-percentage positive">+8.2%</span>
-              </div>
-              <p class="card-label">This month's income</p>
-              <h2 class="card-value dark">1,245 TND</h2>
-              <p class="card-detail">42 Completed trips</p>
-            </div>
+          <!-- Titre -->
+          <div class="payment-header">
+            <h1 class="payment-title">Complete your booking</h1>
+            <p class="payment-subtitle">
+              Complete your payment to confirm your ride
+            </p>
           </div>
 
-          <div class="summary-card pending-card">
-            <div class="card-icon-wrapper orange">
-              <div class="card-icon">💵</div>
-            </div>
-            <div class="card-content">
-              <div class="card-header">
-                <span class="card-status">En attente</span>
-              </div>
-              <p class="card-label">Revenus en attente</p>
-              <h2 class="card-value dark">156 TND</h2>
-              <p class="card-detail">3 paiements en cours</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Graphique et transactions -->
-        <div class="dashboard-grid">
-          <div class="chart-card">
-            <div class="chart-header">
-              <h3 class="chart-title">Income by period</h3>
-              <div class="chart-tabs">
-                <button class="tab active">Day</button>
-                <button class="tab">Month</button>
-                <button class="tab">Year</button>
-              </div>
-            </div>
-            <div class="chart-container">
-              <div class="bar-chart">
-                <div class="bar" style="height: 40%"><span>Mon</span></div>
-                <div class="bar" style="height: 60%"><span>Tue</span></div>
-                <div class="bar" style="height: 30%"><span>Wed</span></div>
-                <div class="bar" style="height: 50%"><span>Thu</span></div>
-                <div class="bar" style="height: 70%"><span>Fri</span></div>
-                <div class="bar" style="height: 100%"><span>Sat</span></div>
-                <div class="bar" style="height: 80%"><span>Sun</span></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="transactions-card">
-            <div class="transactions-header">
-              <h3 class="transactions-title">Recent transactions</h3>
-              <a href="#" class="show-all-link">Show all</a>
-            </div>
-            <div class="transactions-list">
-              <div class="transaction-item">
-                <div class="transaction-icon positive">+</div>
-                <div class="transaction-info">
-                  <div class="transaction-route">ESPRIT → Soussa</div>
-                  <div class="transaction-date">Aujourd'hui, 14:30</div>
+          <div class="payment-content">
+            <!-- Colonne gauche -->
+            <div class="payment-left">
+              <!-- Trip Summary -->
+              <div class="trip-summary-card">
+                <div class="card-header">
+                  <h3 class="card-title">Trip Summary</h3>
+                  <div class="confirmed-badge">Confirmed</div>
                 </div>
-                <div class="transaction-amount positive">+45 TND</div>
-              </div>
-              <div class="transaction-item">
-                <div class="transaction-icon positive">+</div>
-                <div class="transaction-info">
-                  <div class="transaction-route">Nabeul → Esprit</div>
-                  <div class="transaction-date">Hier, 09:15</div>
-                </div>
-                <div class="transaction-amount positive">+32 TND</div>
-              </div>
-              <div class="transaction-item">
-                <div class="transaction-icon negative">-</div>
-                <div class="transaction-info">
-                  <div class="transaction-route">Refund</div>
-                  <div class="transaction-date">2 jours, Annulation</div>
-                </div>
-                <div class="transaction-amount negative">-18 TND</div>
-              </div>
-              <div class="transaction-item">
-                <div class="transaction-icon positive">+</div>
-                <div class="transaction-info">
-                  <div class="transaction-route">
-                    Technopole ghazella → Bordeaux
+                <p class="reservation-id">Reservation #TR-2847563</p>
+
+                <div class="route-details">
+                  <div class="route-line"></div>
+                  <div class="route-points">
+                    <div class="route-point departure">
+                      <div class="point-icon">📍</div>
+                      <div class="point-info">
+                        <div class="point-label">Departure</div>
+                        <div class="point-location">Esprit, ariena</div>
+                        <div class="point-date">
+                          Monday 18 Nov. 2024 • 14:30
+                        </div>
+                      </div>
+                    </div>
+                    <div class="route-point arrival">
+                      <div class="point-icon">📍</div>
+                      <div class="point-info">
+                        <div class="point-label">Arrival</div>
+                        <div class="point-location">Ben arous,mourouj</div>
+                        <div class="point-date">
+                          Monday 18 Nov. 2024 • 19:15
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="transaction-date">3 jours, 16:45</div>
+                  <div class="route-meta">
+                    <div class="meta-item">
+                      <span class="meta-icon">🕐</span>
+                      <span>4h 45min</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-icon">👥</span>
+                      <span>2 places</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="transaction-amount positive">+28 TND</div>
+
+                <div class="driver-info">
+                  <div class="driver-avatar">
+                    <img src="https://via.placeholder.com/50" alt="Driver" />
+                  </div>
+                  <div class="driver-details">
+                    <div class="driver-name">Djobi Haithem</div>
+                    <div class="driver-rating">
+                      <span class="rating-value">4.9</span>
+                      <span class="star-icon">★</span>
+                      <span class="driver-trips">127 trips</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="vehicle-info">
+                  <span class="vehicle-label">Vehicle</span>
+                  <span class="vehicle-model">Renault Mégane</span>
+                </div>
+              </div>
+
+              <!-- Payment method -->
+              <div class="payment-method-card">
+                <h3 class="card-title">Payment method</h3>
+
+                <div class="payment-options">
+                  <div class="payment-option selected">
+                    <div class="option-content">
+                      <div class="option-radio"></div>
+                      <div class="option-info">
+                        <div class="option-title">Credit card</div>
+                      </div>
+                      <div class="card-logos">
+                        <span>VISA</span>
+                        <span>Mastercard</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="payment-option">
+                    <div class="option-content">
+                      <div class="option-radio"></div>
+                      <div class="option-info">
+                        <div class="option-title">PayPal</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="payment-option">
+                    <div class="option-content">
+                      <div class="option-radio"></div>
+                      <div class="option-info">
+                        <div class="option-title">Apple Pay</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Formulaire de carte -->
+                <div class="card-form">
+                  <div class="form-group">
+                    <label>Card Number</label>
+                    <div class="input-with-icon">
+                      <input type="text" placeholder="1234 5678 9012 3456" />
+                      <span class="input-icon-right">📷</span>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label>Expiration Date</label>
+                      <input type="text" placeholder="MM/AA" />
+                    </div>
+                    <div class="form-group">
+                      <label>CVV</label>
+                      <input type="text" placeholder="123" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Name on the card</label>
+                    <input type="text" placeholder="Marc Dupont" />
+                  </div>
+
+                  <div class="form-checkbox">
+                    <input type="checkbox" id="save-card" />
+                    <label for="save-card"
+                      >Save this card for my future payments</label
+                    >
+                  </div>
+                </div>
+
+                <!-- Code promo -->
+                <div class="promo-section">
+                  <h4 class="promo-title">Promo code</h4>
+                  <div class="promo-input-group">
+                    <input type="text" placeholder="Entry your code" />
+                    <button class="promo-button">Apply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Colonne droite -->
+            <div class="payment-right">
+              <!-- Payment details -->
+              <div class="payment-details-card">
+                <h3 class="card-title">Payement Details</h3>
+
+                <div class="price-breakdown">
+                  <div class="price-row">
+                    <span>Price per seat</span>
+                    <span>8,00 TND</span>
+                  </div>
+                  <div class="price-row">
+                    <span>Number of seats</span>
+                    <span>x 2</span>
+                  </div>
+                  <div class="price-row">
+                    <span>Subtotal</span>
+                    <span>56,00 TND</span>
+                  </div>
+                  <div class="price-row">
+                    <span>Service fees</span>
+                    <span>4,20 TND</span>
+                  </div>
+                </div>
+
+                <div class="price-divider"></div>
+
+                <div class="total-row">
+                  <span>Total</span>
+                  <span>60,20 TND</span>
+                </div>
+
+                <button class="pay-now-button" id="pay-now-btn">
+                  <span class="lock-icon">🔒</span>
+                  <span>Pay now</span>
+                </button>
+
+                <div class="secure-message">
+                  <span class="check-icon">✓</span>
+                  <span>100% secure payment</span>
+                </div>
+              </div>
+
+              <!-- Annulation gratuite -->
+              <div class="cancellation-box">
+                <div class="box-icon">🔵</div>
+                <div>
+                  <strong>Free cancellation</strong>
+                  <p>
+                    Cancel up to 24 hours before departure and receive a full
+                    refund
+                  </p>
+                </div>
+              </div>
+
+              <!-- Termes et conditions -->
+              <div class="terms-text">
+                By confirming this payment, you agree to our
+                <a href="#">Terms and conditions</a>
+                and our
+                <a href="#">Privacy policy</a>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Statistiques, Performance, Paiements -->
-        <div class="dashboard-bottom">
-          <div class="stats-card">
-            <h3 class="card-title">Monthly statistics</h3>
-            <div class="stats-list">
-              <div class="stat-row">
-                <span>Completed trips</span>
-                <strong>42</strong>
-              </div>
-              <div class="stat-row">
-                <span>Distance traveled</span>
-                <strong>2,847 km</strong>
-              </div>
-              <div class="stat-row">
-                <span>Passengers transported</span>
-                <strong>89</strong>
-              </div>
-              <div class="stat-row">
-                <span>Occupancy rate</span>
-                <strong class="positive">78%</strong>
+          <!-- Features en bas -->
+          <div class="payment-features">
+            <div class="feature-block">
+              <div class="feature-icon green">🛡️</div>
+              <div>
+                <strong>Secure payment</strong>
+                <p>256-bit SSL encryption</p>
               </div>
             </div>
-          </div>
-
-          <div class="performance-card">
-            <h3 class="card-title">Performance</h3>
-            <div class="performance-metrics">
-              <div class="metric-item">
-                <div class="metric-header">
-                  <span>Average rating</span>
-                  <span class="metric-value">4.8/5</span>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress-fill" style="width: 96%"></div>
-                </div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-header">
-                  <span>Punctuality</span>
-                  <span class="metric-value">94%</span>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress-fill" style="width: 94%"></div>
-                </div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-header">
-                  <span>Acceptance rate</span>
-                  <span class="metric-value">89%</span>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress-fill" style="width: 89%"></div>
-                </div>
+            <div class="feature-block">
+              <div class="feature-icon blue">🔄</div>
+              <div>
+                <strong>Easy refund</strong>
+                <p>Within 24-48 hours</p>
               </div>
             </div>
-          </div>
-
-          <div class="payments-card">
-            <h3 class="card-title">Upcoming payments</h3>
-            <div class="payment-info">
-              <div class="payment-item">
-                <span>Automatic payment</span>
-                <span class="payment-status">Actif</span>
+            <div class="feature-block">
+              <div class="feature-icon purple">🎧</div>
+              <div>
+                <strong>Support 24/7</strong>
+                <p>Assistance available</p>
               </div>
-              <p class="payment-detail">Every Friday</p>
-              <div class="payment-item">
-                <span>Next transfer</span>
-                <span class="payment-date">Friday 24 Nov</span>
+            </div>
+            <div class="feature-block">
+              <div class="feature-icon orange">⭐</div>
+              <div>
+                <strong>Quality guarantee</strong>
+                <p>Verified drivers</p>
               </div>
-              <div class="payment-item">
-                <span>Estimated amount</span>
-                <span class="payment-amount">387 TND</span>
-              </div>
-              <button class="setup-button">Set up payments</button>
             </div>
           </div>
         </div>
       </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <div class="footer-slogan">
+              <p class="slogan-line">Rides that bring you</p>
+              <p class="slogan-line slogan-large">closer,</p>
+              <p class="slogan-line slogan-italic">effortlessly</p>
+            </div>
+            <h1 class="footer-logo">Covoit Esprit</h1>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-column">
+              <h3 class="footer-title">EXPLORE</h3>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link">Simulation</a></li>
+                <li><a href="#" class="footer-link">Payment</a></li>
+                <li><a href="#" class="footer-link">Create a Ride</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-title">SUPPORT</h3>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link">Contact Us</a></li>
+                <li><a href="#" class="footer-link">FAQs</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-title">FIND US ON</h3>
+              <ul class="footer-list">
+                <li>
+                  <a href="#" class="footer-link footer-social-link">
+                    <span class="social-icon">@</span>
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link footer-social-link">
+                    <span class="social-icon">X</span>
+                    <span>X (Formerly Twitter)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link footer-social-link">
+                    <span class="social-icon">f</span>
+                    <span>Facebook</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+      </footer>
     </div>
 
     <script>
-      // Navigation vers pending-requests.html when clicking on "My trips"
+      // Navigation vers confirmation.html après le paiement
       document.addEventListener("DOMContentLoaded", function () {
-        const myTripsItem = document.getElementById("my-trips-item");
+        const payButton = document.getElementById("pay-now-btn");
 
-        if (myTripsItem) {
-          myTripsItem.addEventListener("click", function (e) {
+        if (payButton) {
+          payButton.addEventListener("click", function (e) {
             e.preventDefault();
-            window.location.href = "pending-requests.html";
+
+            // Simuler un traitement de paiement (dans une vraie app, ce serait une requête API)
+            // Ici on redirige directement après un court délai pour simuler le traitement
+            payButton.disabled = true;
+            const originalContent = payButton.innerHTML;
+            payButton.innerHTML = "<span>Processing...</span>";
+
+            setTimeout(function () {
+              // Générer un numéro de référence aléatoire
+              const referenceNumber =
+                "GC" +
+                Math.floor(Math.random() * 1000000)
+                  .toString()
+                  .padStart(6, "0");
+
+              // Stocker le numéro de référence dans sessionStorage
+              sessionStorage.setItem("paymentReference", referenceNumber);
+
+              // Rediriger vers confirmation.html
+              window.location.href = "confirmation.html";
+            }, 1500); // Délai de 1.5 secondes pour simuler le traitement
           });
+        }
+
+        // Charger les données de réservation depuis sessionStorage si disponibles
+        const bookingData = sessionStorage.getItem("bookingData");
+        if (bookingData) {
+          try {
+            const data = JSON.parse(bookingData);
+            // Vous pouvez utiliser ces données pour pré-remplir des champs si nécessaire
+            console.log("Booking data loaded:", data);
+          } catch (e) {
+            console.error("Error parsing booking data:", e);
+          }
         }
       });
     </script>
