@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trip Simulation - CovoitEsprit</title>
+</head>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&family=Playfair+Display:wght@400;700&family=Montserrat:wght@600&family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .logo-font {
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      font-size: 32px;
+      color: #ffffff;
+      opacity: 1;
+      line-height: 1;
+    }
+    .step-muted {
+      color: #ffffff !important;
+      background: #999999 !important;
+      border-color: #999999 !important;
+      font-family: 'SF Pro Text', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 600;
+    }
+    .subtitle-poppins {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #D9D9D9;
+      opacity: 1;
+      text-align: center;
+      margin-top: 8px;
+      margin-bottom: 32px;
+    }
+    .title-poppins {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      color: #1F3A6B;
+      opacity: 1;
+      text-align: center;
+      margin: 0;
+      line-height: 1.1;
+    }
+    button.btn-primary,
+    .btn-primary {
+      background-color: #1f3a6b !important;
+      color: #fff !important;
+      padding: 0.6rem 1.2rem !important;
+      border-radius: 6px !important;
+      font-weight: 500 !important;
+      border: none !important;
+      cursor: pointer !important;
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+      font-size: 16px !important;
+      transition: background-color 0.2s !important;
+      display: inline-block !important;
+    }
+    button.btn-primary:hover,
+    .btn-primary:hover {
+      background-color: #1a2f5a !important;
+    }
+    button.btn-secondary,
+    .btn-secondary {
+      background-color: #fff !important;
+      border: 1px solid #ccc !important;
+      padding: 0.6rem 1.2rem !important;
+      border-radius: 6px !important;
+      color: #333 !important;
+      cursor: pointer !important;
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+      font-size: 16px !important;
+      font-weight: 500 !important;
+      transition: background-color 0.2s, border-color 0.2s !important;
+      display: inline-block !important;
+    }
+    button.btn-secondary:hover,
+    .btn-secondary:hover {
+      background-color: #f9fafb !important;
+      border-color: #999 !important;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white">
+    <div class="flex items-center justify-between px-6 py-4">
+      <div class="logo-font" style="margin-right: auto;">CovoitEsprit</div>
+      <nav class="hidden md:flex gap-8 text-sm mx-auto">
+        <a href="index.html" class="hover:text-blue-200" style="font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:400; font-size:24px;">Home</a>
+        <a href="SimulationExpensesPage.html" class="underline" style="font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:400; font-size:24px;">Simulation</a>
+        <a href="payment.html" class="hover:text-blue-200" style="font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:400; font-size:24px;">Payment</a>
+      </nav>
+      <div class="flex items-center gap-4 ml-auto">
+        <button class="hidden md:inline-flex items-center gap-2 px-3 py-1.5" style="background-color: rgba(217, 217, 217, 0.2); color: #ffffff; border-radius: 24px; width:auto; height:40px; justify-content:center; align-items:center; padding: 0 16px; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:400; font-size:16px;">+ Create a ride</button>
+        <div class="w-9 h-9 rounded-full flex items-center justify-center text-white" style="background-color: rgba(217, 217, 217, 0.2);">👤</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-12">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h1 class="title-poppins">Trip Simulation</h1>
+      <p class="subtitle-poppins">Calculate trip cost and duration before publishing</p>
+
+      <!-- Stepper (labels to the right of numbers) -->
+      <div class="max-w-xl mx-auto mb-8">
+        <div class="flex items-center">
+          <!-- Step 1 -->
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full border flex items-center justify-center text-sm bg-white step-muted">1</div>
+            <div class="text-sm text-gray-500">Coordinates</div>
+          </div>
+
+          <!-- connector -->
+          <div class="flex-1 h-px bg-gray-200 mx-4"></div>
+
+          <!-- Step 2 (active) -->
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm bg-blue-900 text-white">2</div>
+            <div class="text-sm text-blue-900 font-medium">Expenses</div>
+          </div>
+
+          <!-- connector -->
+          <div class="flex-1 h-px bg-gray-200 mx-4"></div>
+
+          <!-- Step 3 -->
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full border flex items-center justify-center text-sm bg-white step-muted">3</div>
+            <div class="text-sm text-gray-500">Results</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="max-w-2xl mx-auto">
+        <div class="relative bg-white border border-gray-300 rounded-lg shadow-sm">
+          <button class="absolute left-1 top-1 w-9 h-9 bg-white rounded-full flex items-center justify-center border border-gray-200 shadow-sm">
+            ←
+          </button>
+
+          <div class="p-8 relative">
+            <form class="space-y-4">
+              <div>
+                <label style="color:#1F3A6B; font-weight:600; font-size:20px; opacity:1; display:block; margin-bottom:6px;">Distance</label>
+                <input type="text" placeholder="123 KM" value="123 KM" class="w-full border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" style="font-family: 'SF Pro Text', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:300; font-size:18px; color:#999999; opacity:1;" />
+              </div>
+
+              <div>
+                <label style="color:#1F3A6B; font-weight:600; font-size:20px; opacity:1; display:block; margin-bottom:6px;">Fuel Price (DT/L)</label>
+                <input type="text" placeholder="2.525" value="2.525" class="w-full border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" style="font-family: 'SF Pro Text', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:300; font-size:18px; color:#999999; opacity:1;" />
+              </div>
+
+              <div>
+                <label style="color:#1F3A6B; font-weight:600; font-size:20px; opacity:1; display:block; margin-bottom:6px;">Vehicle Consumption</label>
+                <input type="text" placeholder="12" value="12" class="w-full border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-200" style="font-family: 'SF Pro Text', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:300; font-size:18px; color:#999999; opacity:1;" />
+              </div>
+
+              <div class="flex justify-end gap-3 mt-4">
+                <button type="button" class="btn-secondary">Cancel</button>
+                <button type="submit" class="btn-primary">Next Step →</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white mt-12" style="position: relative;">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <div class="flex justify-between items-start gap-12">
+        <div class="flex-1" style="position: relative; z-index: 1;">
+          <p style="font-family: 'Playfair Display', serif; font-weight:700; font-size:36px; color:#ffffff; opacity:1;">Rides that bring you</p>
+          <p style="font-family: 'Playfair Display', serif; font-weight:700; font-size:36px; color:#ffffff; opacity:1;">closer,</p>
+          <p style="font-family: 'Playfair Display', serif; font-weight:400; font-size:40px; color:#ffffff; opacity:1;">effortlessly</p>
+        </div>
+        <div class="flex gap-12">
+          <div>
+            <h4 class="mb-2" style="font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:16px; color:#999999; opacity:1;">Explore</h4>
+            <ul class="space-y-1">
+              <li><a href="#" style="font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:700; font-size:20px; color:#ffffff; opacity:1;">Simulation</a></li>
+              <li><a href="#" style="font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:700; font-size:20px; color:#ffffff; opacity:1;">Payment</a></li>
+              <li><a href="#" style="font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:700; font-size:20px; color:#ffffff; opacity:1;">Create a Ride</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-2" style="font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:16px; color:#999999; opacity:1;">Support</h4>
+            <ul class="space-y-1">
+              <li><a href="#" style="font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:700; font-size:20px; color:#ffffff; opacity:1;">Contact Us</a></li>
+              <li><a href="#" style="font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:700; font-size:20px; color:#ffffff; opacity:1;">FAQs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-2" style="font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:16px; color:#999999; opacity:1;">Find us on</h4>
+            <ul class="space-y-1">
+              <li style="font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:700; font-size:20px; color:#ffffff; opacity:1; display:flex; align-items:center; gap:8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><circle cx="17.5" cy="6.5" r="1.5"></circle></svg>
+                Instagram
+              </li>
+              <li style="font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:700; font-size:20px; color:#ffffff; opacity:1; display:flex; align-items:center; gap:8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2s9 5 20 0c1.73-1.72 3.36-4.46 3-8.5.24-.75.42-1.52.54-2.31z"></path></svg>
+                Twitter
+              </li>
+              <li style="font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight:700; font-size:20px; color:#ffffff; opacity:1; display:flex; align-items:center; gap:8px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                Facebook
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0; white-space: nowrap; pointer-events: none;">
+    </div>
+  </footer>
+
+</body>
+</html>

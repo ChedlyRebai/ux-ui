@@ -1,0 +1,99 @@
+<main class="py-12 simulation-results">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Title -->
+    <h1 class="title-poppins">Trip Simulation</h1>
+    <p class="subtitle-poppins">
+      Calculate trip cost and duration before publishing
+    </p>
+
+    <!-- Stepper -->
+    <div class="max-w-xl mx-auto mb-8">
+      <div class="flex items-center">
+
+        <!-- Step 1 -->
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full border step-muted flex items-center justify-center text-sm">
+            1
+          </div>
+          <span class="text-gray-500 text-sm">Coordinates</span>
+        </div>
+
+        <div class="flex-1 h-px bg-gray-200 mx-4"></div>
+
+        <!-- Step 2 -->
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full border step-muted flex items-center justify-center text-sm">
+            2
+          </div>
+          <span class="text-gray-500 text-sm">Expenses</span>
+        </div>
+
+        <div class="flex-1 h-px bg-gray-200 mx-4"></div>
+
+        <!-- Step 3 (ACTIVE) -->
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-blue-900 text-white flex items-center justify-center text-sm">
+            3
+          </div>
+          <span class="text-blue-900 font-medium text-sm">Results</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      <!-- LEFT CARD -->
+      <div class="bg-white border border-gray-300 rounded-lg shadow-sm p-8 relative">
+
+        <button class="absolute left-3 top-3 w-9 h-9 rounded-full border border-gray-200 bg-white shadow-sm flex items-center justify-center text-gray-700 hover:bg-gray-50">
+          ←
+        </button>
+
+        <h2 class="results-title">Estimated Travel Cost</h2>
+
+        <div class="results-row">
+          <span>Total Cost:</span>
+          <strong>25.36 TND</strong>
+        </div>
+
+        <div class="results-row">
+          <span>Contribution Per Passenger:</span>
+          <strong>7.85 TND</strong>
+        </div>
+
+        <div class="results-row">
+          <span>Estimated Duration:</span>
+          <strong>36 Minutes</strong>
+        </div>
+
+        <div class="results-note">
+          <p>Calculation based on 250 km, 6.5 L/100 km, 2.5 DT/L of fuel.</p>
+          <p class="mt-2">The total cost corresponds to the fuel price divided between the driver and the passengers.</p>
+        </div>
+
+        <div class="flex gap-3 mt-6">
+          <button class="btn-secondary">Share</button>
+          <button class="btn-secondary">Save</button>
+          <button class="btn-primary">Create Trip</button>
+        </div>
+
+      </div>
+
+      <!-- MAP -->
+      <div class="map-container">
+        <img
+          src="assets/map-route.png"
+          alt="Map showing trip route with traffic indicators and route information"
+          class="w-full h-full"
+        />
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
