@@ -1,7 +1,7 @@
 <h2>📸 Captures d’écran</h2>
-👥 Choix du Compte – Interface d’Accueil
+<div>👥 Choix du Compte – Interface d’Accueil</div>
 
-Cette interface permet à l’utilisateur de choisir son rôle dès l’entrée dans l’application.
+<div>Cette interface permet à l’utilisateur de choisir son rôle dès l’entrée dans l’application.
 
 Types de comptes :
 
@@ -26,10 +26,12 @@ Avantages clés :
 ⭐ Système de notation fiable
 
 💳 Paiement intégré et sécurisé
-<img src="public/0.png" width="300"/>
-📊 Tableau de Bord – Activité du Conducteur
 
-Le dashboard offre une vue complète de l’activité du conducteur.
+</div>
+<img src="public/0.png" width="300"/>
+<div>📊 Tableau de Bord – Activité du Conducteur</div>
+
+<div>Le dashboard offre une vue complète de l’activité du conducteur.
 
 Fonctionnalités :
 
@@ -52,9 +54,11 @@ Gains détaillés
 🎯 Objectif :
 Permettre au conducteur de suivre ses performances et ses revenus de manière simple et visuelle.
 
-<img src="public/00.png" width="300"/>
-🔔 Demandes en attente – Interface Conducteur
-
+</div>
+<div>
+<img src="public/00.png" width="300"/></div>
+<div>🔔 Demandes en attente – Interface Conducteur</div>
+<div>
 Cette interface permet au conducteur de consulter et gérer les demandes de trajets reçues.
 
 Fonctionnalités :
@@ -86,5 +90,6 @@ Actions rapides :
 ❌ Refuser la demande
 
 🎯 Objectif :
-Aider le conducteur à prendre une décision rapide, informée et sécurisée.
-<img src="public/000.png" width="300"/>
+Aider le conducteur à prendre une décision rapide, informée et sécurisée.</div>
+
+<div><img src="public/000.png" width="300"/></div>
