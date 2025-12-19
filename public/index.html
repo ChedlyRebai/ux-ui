@@ -3,21 +3,182 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Test</title>
-    <link href="style.css" rel="stylesheet" />
+    <title>CovoitEsprit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-100 p-8">
-    <a class="text-blue-600 inter text-3xl" href="./homepage.html">Slim</a>
-    <a class="text-blue-600 inter text-3xl" href="./login.html">
-      Haythem & mahmoud</a
-    >
-    <a
-      class="text-blue-600 inter text-3xl"
-      href="./gestion_des_trajet/Home_trajet.html"
-      >Chedly&Donia</a
-    >
-    <a class="text-blue-600 inter text-3xl" href="./SimulationExpensesPage.html"
-      >Oussema</a
-    >
+  <body>
+    <div class="bg-[#1F3A6B]">
+      <div
+        class="grid grid-cols-12 border-b-2 border-white py-2 px-24 items-center"
+      >
+        <div class="col-span-4 dancing-script text-white text-5xl">
+          CovoitEsprit
+        </div>
+        <a href="./login.html"
+          ><div class="col-span-2 inter text-white text-2xl">Payment</div></a
+        >
+        <div class="col-span-2 inter text-white text-2xl">
+          <a href="./simulation1.html">Simulation</a>
+        </div>
+        <a href="./gestion_des_trajet/Home_trajet.html"
+          ><div class="col-span-2 inter text-white text-2xl">Payment</div></a
+        >
+        <div class="col-span-2 w-auto flex items-center justify-center">
+          <div
+            class="rounded-lg bg-white/20 flex-row flex items-center justify-start p-2 w-auto"
+          >
+            <img src="./ADD.svg" />
+            <p class="poppins-regular text-white">Create a ride</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-12 px-24 pt-6 flex items-center justify-center"
+      >
+        <div class="col-span-6 poppins-light text-white text-3xl pr-8">
+          Join a community of students sharing rides to make commuting simpler,
+          more affordable, and eco-friendly. Whether you need a ride or have a
+          seat to offer, our platform helps you find the perfect match for your
+          journey.
+        </div>
+        <img
+          class="object-cover size-full col-span-6 rounded"
+          src="./assets/covoitmain.png"
+        />
+      </div>
+      <div class="bg-[#f2f2f2] grid grid-cols-12 pt-4">
+        <input
+          class="bg-white drop-shadow-2xl border border-gray-400 text-gray-400 rounded-l-lg border-b text-xl col-span-8 w-3/5 flex justify-self-end pl-2 py-2"
+          type="text"
+          placeholder="Your next destination..."
+        />
+        <div
+          class="bg-[#1F3A6B] drop-shadow-2xl text-white rounded-r-lg col-span-4 text-xl w-1/4 flex justify-start pl-2 py-2"
+        >
+          <img src="./assets/search.svg" class="px-1" />
+          Search
+        </div>
+      </div>
+      <div
+        class="bg-[#f2f2f2] grid grid-cols-12 grid-rows-2 pt-12 gap-4 items-center px-24"
+      >
+        <div
+          class="flex col-span-12 text-[#1F3A6B] justify-center text-5xl poppins-bold"
+        >
+          Recommended locations
+        </div>
+        <div
+          class="flex col-span-12 text-gray-400 justify-center text-3xl poppins-light"
+        >
+          The most popular locations for students
+        </div>
+      </div>
+      <div class="bg-[#f2f2f2] grid grid-cols-12 items-center px-24 py-6">
+        <div class="col-span-1 flex justify-end">
+          <img src="./assets/chevronbackward.svg" class="px-1" />
+        </div>
+        <div class="col-span-10 flex items-center gap-10 justify-center">
+          <div class="relative">
+            <img class="z-10" src="./assets/Aouina.png" />
+            <p
+              class="absolute inset-0 text-white text-center poppins-bold text-3xl flex items-center justify-center z-20"
+            >
+              L'aouina
+            </p>
+          </div>
+          <div class="relative">
+            <img class="z-10" src="./assets/Mourouj.png" />
+            <p
+              class="absolute inset-0 text-white text-center poppins-bold text-3xl flex items-center justify-center z-20"
+            >
+              El Mourouj
+            </p>
+          </div>
+          <div class="relative">
+            <img class="z-10" src="./assets/Tunis.png" />
+            <p
+              class="absolute inset-0 text-white text-center poppins-bold text-3xl flex items-center justify-center z-20"
+            >
+              Tunis
+            </p>
+          </div>
+        </div>
+
+        <div class="col-span-1 flex justify-start">
+          <img src="./assets/chevronforward.svg" class="px-1" />
+        </div>
+      </div>
+      <div class="grid grid-cols-12 px-24 py-6 flex items-center">
+        <div class="col-span-6 poppins-light text-white text-4xl">
+          <img src="./assets/simurride.png" class="object-cover" alt="" />
+        </div>
+        <div class="col-span-6 flex items-center justify-center">
+          <div
+            class="bg-[#f2f2f2] flex justify-start pl-8 w-3/4 rounded-xl grid grid-cols-12 grid-rows-2 py-4"
+          >
+            <p class="poppins-bold text-3xl text-[#1F3A6B] col-span-10">
+              Get your estimate
+            </p>
+            <img
+              src="./assets/arrowright.svg"
+              class="row-span-2 col-span-2 flex justify-center"
+              alt=""
+            />
+            <p class="text-xl text-gray-400 inter col-span-10">
+              Find out how much your ride costs using our own AI estimation tool
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-12 grid-rows-2 border-y-2 px-24 py-4 flex items-stretch border-white"
+      >
+        <div class="col-span-6 text-white text-4xl">
+          <p class="playfair-display flex justify-start">
+            Rides that bring you closer,
+          </p>
+          <p class="playball-regular pt-2 flex justify-start">Effortlessly</p>
+        </div>
+        <div
+          class="col-span-2 row-span-2 grid flex justify-items-center border-x-2 border-white"
+        >
+          <div class="justify-self-center montserrat text-[#999999]">
+            Explore
+          </div>
+          <div class="montserrat text-white">Simulation</div>
+          <div class="montserrat text-white">Payment</div>
+          <div class="montserrat text-white">Create a ride</div>
+        </div>
+        <div class="col-span-2 row-span-2 grid flex justify-items-center">
+          <div class="justify-self-center montserrat text-[#999999]">
+            Support
+          </div>
+          <div class="montserrat text-white">Contact us</div>
+          <div class="montserrat text-white">FAQs</div>
+        </div>
+        <div
+          class="col-span-2 row-span-2 grid flex justify-items-center border-x-2 border-white"
+        >
+          <div class="justify-self-center montserrat text-[#999999]">
+            Find us on
+          </div>
+          <div class="montserrat text-white">Instagram</div>
+          <div class="montserrat text-white">X</div>
+          <div class="montserrat text-white">Facebook</div>
+        </div>
+        <div
+          class="col-span-6 text-white flex justify-center pt-4 playball-regular text-8xl"
+        >
+          CovoitEsprit
+        </div>
+      </div>
+      <div class="text-[#1F3A6B] bg-#1F3A6B h-6"></div>
+    </div>
   </body>
 </html>
